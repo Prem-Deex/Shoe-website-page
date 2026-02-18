@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: rgb(221, 221, 221);
+}
+
 .navbar {
     background: #000;
     color: white;
@@ -37,13 +42,38 @@
 }
 
 .nav-links a:hover {
-    color: #ff4d4d;
+    color: rgb(255, 77, 77);
+    text-decoration: underline;
+    transition: 0.3s
 }
 
 .nav-icons {
     display: flex;
-    gap: 20px;
+    gap: 40px;
+
 }
+
+.fa-solid fa-cart-arrow-down {
+    margin-left: 10px;
+}
+
+.cart-box {
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
 
 
 main {
@@ -66,9 +96,12 @@ main aside {
 }
 
 .content {
+    border: 1px solid grey;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     gap: 4px;
+
 }
 
 .content .header {
@@ -97,7 +130,8 @@ p {
     margin-bottom: 8px;
     margin-top: 8px;
     font-size: 24px;
-    font-weight: 600;   /* removed px */
+    font-weight: 600;
+    /* removed px */
 }
 
 .sizes {
@@ -112,7 +146,7 @@ p {
     padding: 12px 16px;
     text-align: center;
     font-size: 20px;
-    font-weight: 600;   
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -153,6 +187,8 @@ p {
     font-size: 20px;
     font-weight: 600;
     border: 1px solid transparent;
+    color: black;
+    background-color: white(104, 255, 255);
 }
 
 .buttons .buynow:hover {
@@ -168,9 +204,19 @@ p {
     font-size: 20px;
     font-weight: 600;
 }
-.var_img{
+
+.var_img {
     border: 1px solid transparent;
 }
+
 .var_img:hover {
+    border: 1px solid black;
+}
+
+.sideimg {
+    border: 1px solid transparent;
+}
+
+.sideimg:hover {
     border: 1px solid black;
 }

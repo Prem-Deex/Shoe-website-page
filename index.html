@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shoe website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -23,8 +25,12 @@
             </nav>
 
             <div class="nav-icons">
-               <i class="fa-solid fa-magnifying-glass"></i>
-               <i class="fa-solid fa-cart-arrow-down"></i>
+                <i class="fa-solid fa-magnifying-glass"></i><br>
+                <div class="cart-box">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <span id="cart-count">0</span>
+                </div>
+
             </div>
         </div>
     </header>
@@ -32,12 +38,12 @@
     <main>
         <section class="images">
             <aside>
-                <img src="img/side_image1.png" alt="1">
-                <img src="img/side_image2.png" alt="2">
-                <img src="img/side_image3.png" alt="3">
-                <img src="img/side_image4.png" alt="4">
-                <img src="img/side_image5.png" alt="5">
-                <img src="img/side_image6.png" alt="6">
+                <img class="sideimg" src="img/side_image1.png" alt="1">
+                <img class="sideimg" src="img/side_image2.png" alt="2">
+                <img class="sideimg" src="img/side_image3.png" alt="3">
+                <img class="sideimg" src="img/side_image4.png" alt="4">
+                <img class="sideimg" src="img/side_image5.png" alt="5">
+                <img class="sideimg" src="img/side_image6.png" alt="6">
             </aside>
             <section class="main_img">
                 <img src="img/center_image.png" alt="mainshoe">
@@ -85,7 +91,7 @@
 
         </section>
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
