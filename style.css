@@ -214,6 +214,7 @@ p {
     background-color: white;
     border: 1px solid black;
     transition: 0.3s;
+    transform: scale(1.01);
 }
 
 .buttons .add_to_cart:active {
@@ -229,11 +230,13 @@ p {
     font-weight: 600;
     border: 1px solid transparent;
     color: black;
-    background-color: white;
+    background-color: rgb(204, 195, 195);
 }
 
 .buttons .buynow:hover {
     border: 1px solid black;
+    transform: scale(1.01);
+    
 }
 
 .sizes_header {
