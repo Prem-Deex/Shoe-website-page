@@ -46,7 +46,7 @@ body {
 
 .nav-links a:hover {
     color: rgb(255, 77, 77);
-    text-decoration: underline;
+    text-decoration:underline;
     transition: 0.3s
 }
 
