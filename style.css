@@ -189,7 +189,7 @@ p {
 }
 
 .size:hover {
-    background-color: #787373;
+    background-color: #e3e3e3;
 }
 
 .size.active {
@@ -361,9 +361,6 @@ p {
 .cart-item-quantity {
     font-weight: bold;
 }
-/* ========================= */
-/* TABLET */
-/* ========================= */
 
 @media (max-width: 992px) {
 
@@ -386,9 +383,7 @@ p {
 }
 
 
-/* ========================= */
-/* MOBILE */
-/* ========================= */
+
 
 @media (max-width: 768px) {
 
@@ -411,7 +406,7 @@ p {
         padding: 20px;
     }
 
-    /* Navbar stack */
+    
     .nav-container {
         flex-direction: column;
         gap: 12px;
@@ -431,7 +426,7 @@ p {
         font-size: 22px;
     }
 
-    /* Typography scale */
+ 
     .content h1 {
         font-size: 24px;
     }
@@ -444,14 +439,12 @@ p {
         font-size: 16px;
     }
 
-    /* Buttons */
     .buttons .add_to_cart,
     .buttons .buynow {
         padding: 14px;
         font-size: 16px;
     }
 
-    /* Variant images */
     .var_img {
         width: 70px;
         height: 90px;
