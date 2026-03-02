@@ -3,12 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
-    body {
     background-color: #f5f5f5;
+    overflow-x: hidden;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .navbar {
@@ -87,10 +89,10 @@ main {
 }
 
 main .images {
-    display: flex;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
     gap: 24px;
-    align-items: flex-start;
+    align-items: start;
 }
 
 main aside {
@@ -100,13 +102,16 @@ main aside {
 }
 
 .main_img img {
-    width: 591px;
-    height: 739px;
-    transition: 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 
 .main_img img:hover {
     transform: scale(1.02);
+}
+.content {
+    width: 100%;
 }
 
 .sideimg {
@@ -355,4 +360,105 @@ p {
 
 .cart-item-quantity {
     font-weight: bold;
+}
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+    main .images {
+        grid-template-columns: 100px 1fr;
+    }
+
+    .content {
+        grid-column: span 2;
+        padding: 20px;
+    }
+
+    aside {
+        flex-direction: column;
+    }
+
+    .main_img img {
+        max-width: 100%;
+    }
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    main .images {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .main_img {
+        text-align: center;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    /* Navbar stack */
+    .nav-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    /* Typography scale */
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .pricing h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* Buttons */
+    .buttons .add_to_cart,
+    .buttons .buynow {
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    /* Variant images */
+    .var_img {
+        width: 70px;
+        height: 90px;
+    }
+
+    .sideimg {
+        width: 70px;
+        height: 90px;
+    }
 }
