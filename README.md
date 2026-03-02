@@ -6,3 +6,4 @@ A responsive Nike shoe product page built with **HTML, CSS, and JavaScript**
 - Product info updates (material, description, rating, price)
 - Choose shoe size
 - Add to cart with quantity counter
+
